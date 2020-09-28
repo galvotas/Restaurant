@@ -1,0 +1,162 @@
+@import "scss/navigation";
+@import "scss/story";
+@import "scss/about";
+@import "scss/upperFooter";
+@import "scss/bottomFooter";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 80%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 45.5%;
+  width: 100vw;
+  overflow-x: hidden;
+  font-family: "Montserrat", sans-serif;
+}
+.wrapper {
+  width: 100%;
+  background-color: #111;
+}
+.header {
+  width: 100vw;
+  background-color: #111;
+  color: #fff;
+  position: relative;
+}
+.menu-abs {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  width: 25rem;
+  background-color: #000;
+  color: #fff;
+  padding: 1.5rem;
+  transition: all 0.5s linear;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateX(30rem);
+  z-index: 3;
+}
+.menu-abs.active {
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(0);
+}
+.menu-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  height: 100%;
+  padding: 2rem;
+}
+.links {
+  ul {
+    list-style: none;
+    margin-top: 2rem;
+    li {
+      margin-bottom: 1rem;
+      a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 2rem;
+        letter-spacing: 0.3rem;
+      }
+    }
+  }
+}
+.contact-info > * {
+  margin-bottom: 2rem;
+}
+.contact-info {
+  h2 {
+    font-size: 1rem;
+    letter-spacing: 0.2rem;
+    line-height: 2rem;
+  }
+  &:last-child {
+    font-size: 0.8rem;
+    font-weight: bolder;
+    letter-spacing: 0.2rem;
+  }
+}
+
+.mid-con {
+  display: grid;
+  grid-template-columns: 0.8fr 0.8fr;
+  grid-template-rows: 90vh;
+}
+.image-con {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    left: 0;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+  }
+}
+.cousine-con {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  & > * {
+    margin-bottom: 1rem;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  h3 {
+    font-size: 3rem;
+    letter-spacing: 0.2rem;
+    font-family: cursive;
+    font-weight: 100;
+    color: gold;
+    text-align: center;
+  }
+  h1 {
+    font-size: 5rem;
+    text-align: center;
+    font-weight: 900;
+  }
+  blockquote {
+    font-size: 1.1rem;
+  }
+}
+@media only screen and (max-width: 780px) {
+  .mid-con {
+    grid-template-columns: 1fr;
+  }
+  .image-con {
+    position: relative;
+    &::after {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+  }
+  .cousine-con {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

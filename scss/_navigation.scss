@@ -1,0 +1,80 @@
+.navigation {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #111;
+  color: #fff;
+}
+.logo-con {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 4rem;
+  h1 {
+    font-size: 2rem;
+    text-align: center;
+    letter-spacing: 0.4rem;
+    margin-right: -0.4rem;
+    font-weight: bolder;
+  }
+  h3 {
+    text-align: center;
+    font-family: cursive;
+    font-size: 0.7rem;
+    font-weight: 100;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin-right: -0.1rem;
+    font-family: "Good Vibes", cursive;
+  }
+}
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  .reservation {
+    padding: 0.5rem 1rem;
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #fff;
+    letter-spacing: 0.2rem;
+    margin-right: -0.2rem;
+    font-size: 0.9rem;
+    z-index: 99;
+    border-radius: 0.3rem;
+    font-family: "Good Vibes", cursive;
+  }
+}
+
+.hamburger {
+  margin: 0 2rem;
+  border: 2px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0.7rem;
+  z-index: 99;
+  cursor: pointer;
+  &:hover {
+    border: 2px solid gold;
+  }
+  .line {
+    width: 2rem;
+    margin-bottom: 0.4rem;
+    height: 0.1rem;
+    background-color: #fff;
+    border: 1px solid #fff;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+@media only screen and(max-width: 760px) {
+  .reservation {
+    display: none;
+  }
+}
