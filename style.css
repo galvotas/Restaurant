@@ -257,11 +257,15 @@
 }
 
 .parallax-wrapper {
+  background-image: url(parallax.jpg);
+  background-attachment: fixed;
   height: 30rem;
   width: 100%;
-  background-image: url(/parallax.jpg);
-  background-attachment: fixed;
   background-size: cover;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
 }
 
 .about-sec {
@@ -598,6 +602,11 @@ html {
   font-size: 80%;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 45.5%;
@@ -609,6 +618,7 @@ body {
 .wrapper {
   width: 100%;
   background-color: #111;
+  overflow: hidden;
 }
 
 .header {
@@ -670,11 +680,17 @@ body {
   margin-bottom: 1rem;
 }
 
+.links ul li:hover > a {
+  color: gold;
+}
+
 .links ul li a {
   text-decoration: none;
   color: #fff;
   font-size: 2rem;
   letter-spacing: 0.3rem;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .contact-info > * {

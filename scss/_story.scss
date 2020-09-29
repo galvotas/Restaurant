@@ -93,9 +93,13 @@
   }
 }
 .parallax-wrapper {
+  background-image: url(parallax.jpg);
+  background-attachment: fixed;
   height: 30rem;
   width: 100%;
-  background-image: url(/parallax.jpg);
-  background-attachment: fixed;
   background-size: cover;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
 }
