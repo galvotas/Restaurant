@@ -5,7 +5,8 @@
 @import "scss/bottomFooter";
 @import "scss/menus";
 @import "scss/about2";
-@import "scss/contact-form";
+@import "scss/reservation-container";
+@import "scss/contact";
 * {
   margin: 0;
   padding: 0;
@@ -78,7 +79,7 @@ body {
       a {
         text-decoration: none;
         color: #fff;
-        font-size: 2rem;
+        font-size: 1.2rem;
         letter-spacing: 0.3rem;
         transition: 0.3s ease-in-out;
       }
@@ -87,10 +88,12 @@ body {
 }
 .contact-info > * {
   margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
 }
 .contact-info {
   h2 {
-    font-size: 1rem;
+    font-size: 0.7rem;
     letter-spacing: 0.2rem;
     line-height: 2rem;
   }
@@ -139,9 +142,9 @@ body {
     }
   }
   h3 {
-    font-size: 3rem;
-    letter-spacing: 0.2rem;
-    font-family: cursive;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    font-family: "Great Vibes", cursive;
     font-weight: 100;
     color: gold;
     text-align: center;
@@ -152,7 +155,7 @@ body {
     font-weight: 900;
   }
   blockquote {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 }
 @media only screen and (max-width: 780px) {
@@ -170,5 +173,8 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+  html {
+    font-size: 70%;
   }
 }

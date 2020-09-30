@@ -12,10 +12,12 @@ if(e.target.classList.contains('hamburger') || e.target.classList.contains('line
 reservationModul.classList.remove('close-animation')
 
 window.addEventListener('click', (e) => {
-if(e.target === reservationBtn) {
+if(e.target.classList.contains('reservation')) {
     reservationModul.classList.add('form-active')
     reservationModul.classList.remove('close-animation')
-
+if(menuModul.classList.contains('active')) {
+    menuModul.classList.remove('active')
+}
 } 
 if(e.target === removeBtn) {
     reservationModul.classList.remove('form-active')
