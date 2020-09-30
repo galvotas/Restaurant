@@ -1450,6 +1450,14 @@ img {
   letter-spacing: 0.1rem;
 }
 
+@media only screen and (max-width: 760px) {
+  .get-form-wrapper {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    row-gap: 2.5rem;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
