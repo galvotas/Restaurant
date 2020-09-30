@@ -1333,6 +1333,35 @@ img {
   }
 }
 
+@media only screen and (max-width: 620px) {
+  .line1,
+  .line2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact-form {
+    border: 4px solid gold;
+    width: 100%;
+    height: 100vh;
+  }
+  .contact-line {
+    margin: 0;
+    padding: 0;
+  }
+  .contact-line .input-box {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+  .contact-line .input-box input {
+    margin-bottom: 0.3rem;
+  }
+  .contact-btn {
+    margin-top: 2rem;
+  }
+}
+
 .get-contact-container {
   width: 100%;
   height: 55vh;
@@ -1631,6 +1660,7 @@ body {
           justify-content: center;
   width: 100%;
   height: 100%;
+  padding: 0 1rem;
 }
 
 .cousine-con > * {

@@ -154,3 +154,28 @@
     transform: translateX(100%);
   }
 }
+@media only screen and(max-width: 620px) {
+  .line1,
+  .line2 {
+    flex-direction: column;
+  }
+  .contact-form {
+    border: 4px solid gold;
+    width: 100%;
+    height: 100vh;
+  }
+  .contact-line {
+    margin: 0;
+    padding: 0;
+    .input-box {
+      width: 100%;
+      margin-bottom: 0.5rem;
+      input {
+        margin-bottom: 0.3rem;
+      }
+    }
+  }
+  .contact-btn {
+    margin-top: 2rem;
+  }
+}
