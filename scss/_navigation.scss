@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #111;
+  background-color: transparent;
   color: #fff;
 }
 .logo-con {
@@ -11,6 +11,7 @@
   justify-content: center;
   align-items: center;
   padding: 1rem 4rem;
+  z-index: 3;
   h1 {
     font-size: 2rem;
     text-align: center;

@@ -4,6 +4,7 @@
 @import "scss/upperFooter";
 @import "scss/bottomFooter";
 @import "scss/menus";
+@import "scss/about2";
 * {
   margin: 0;
   padding: 0;
@@ -26,8 +27,8 @@ body {
 }
 .wrapper {
   width: 100%;
-  background-color: #111;
   overflow: hidden;
+  background-color: #111;
 }
 .header {
   width: 100vw;
@@ -48,7 +49,7 @@ body {
   visibility: hidden;
   opacity: 0;
   transform: translateX(30rem);
-  z-index: 3;
+  z-index: 88;
 }
 .menu-abs.active {
   visibility: visible;
