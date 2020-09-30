@@ -88,3 +88,19 @@
     bottom: 0;
   }
 }
+@media only screen and(max-width: 680px) {
+  .about-item,
+  .about-item.item2 {
+    grid-template-columns: 0.7fr;
+  }
+  .about-item.item2 {
+    .about-img-box2 {
+      order: -1;
+    }
+  }
+  .about-item-content {
+    p {
+      padding: 1rem 0rem;
+    }
+  }
+}

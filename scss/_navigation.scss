@@ -5,13 +5,44 @@
   justify-content: space-between;
   background-color: transparent;
   color: #fff;
+  width: 100%;
+  z-index: 2;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  border-bottom-left-radius: 0.3rem;
+  border-bottom-right-radius: 0.3rem;
+
+  z-index: 3;
 }
+.navigation.fixed {
+  padding: 0.2rem 1rem;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.548);
+
+  animation: animateNav 0.3s ease-in-out;
+  top: 0%;
+  .logo-con {
+    h1 {
+      font-size: 1.5rem;
+    }
+  }
+}
+@keyframes animateNav {
+  0% {
+    opacity: 0;
+    width: 0;
+  }
+  100% {
+    opacity: 1;
+    width: 100%;
+  }
+}
+
 .logo-con {
   display: grid;
   justify-content: center;
   align-items: center;
   padding: 1rem 4rem;
-  z-index: 3;
   h1 {
     font-size: 2rem;
     text-align: center;
@@ -44,7 +75,6 @@
     letter-spacing: 0.2rem;
     margin-right: -0.2rem;
     font-size: 0.9rem;
-    z-index: 99;
     border-radius: 0.3rem;
     font-family: "Good Vibes", cursive;
   }
@@ -58,7 +88,6 @@
   align-items: center;
   flex-direction: column;
   padding: 0.7rem;
-  z-index: 99;
   cursor: pointer;
   &:hover {
     border: 2px solid gold;

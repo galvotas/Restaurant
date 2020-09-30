@@ -5,6 +5,7 @@
 @import "scss/bottomFooter";
 @import "scss/menus";
 @import "scss/about2";
+@import "scss/contact-form";
 * {
   margin: 0;
   padding: 0;
@@ -37,7 +38,7 @@ body {
   position: relative;
 }
 .menu-abs {
-  position: absolute;
+  position: fixed;
   right: 0;
   top: 0;
   height: 100vh;
@@ -45,11 +46,11 @@ body {
   background-color: #000;
   color: #fff;
   padding: 1.5rem;
-  transition: all 0.5s linear;
+  transition: all 0.2s ease-in;
   visibility: hidden;
   opacity: 0;
-  transform: translateX(30rem);
-  z-index: 88;
+  transform: translateX(40rem);
+  z-index: 2;
 }
 .menu-abs.active {
   visibility: visible;

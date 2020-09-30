@@ -11,6 +11,49 @@
           justify-content: space-between;
   background-color: transparent;
   color: #fff;
+  width: 100%;
+  z-index: 2;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  border-bottom-left-radius: 0.3rem;
+  border-bottom-right-radius: 0.3rem;
+  z-index: 3;
+}
+
+.navigation.fixed {
+  padding: 0.2rem 1rem;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.548);
+  -webkit-animation: animateNav 0.3s ease-in-out;
+          animation: animateNav 0.3s ease-in-out;
+  top: 0%;
+}
+
+.navigation.fixed .logo-con h1 {
+  font-size: 1.5rem;
+}
+
+@-webkit-keyframes animateNav {
+  0% {
+    opacity: 0;
+    width: 0;
+  }
+  100% {
+    opacity: 1;
+    width: 100%;
+  }
+}
+
+@keyframes animateNav {
+  0% {
+    opacity: 0;
+    width: 0;
+  }
+  100% {
+    opacity: 1;
+    width: 100%;
+  }
 }
 
 .logo-con {
@@ -23,7 +66,6 @@
       -ms-flex-align: center;
           align-items: center;
   padding: 1rem 4rem;
-  z-index: 3;
 }
 
 .logo-con h1 {
@@ -67,7 +109,6 @@
   letter-spacing: 0.2rem;
   margin-right: -0.2rem;
   font-size: 0.9rem;
-  z-index: 99;
   border-radius: 0.3rem;
   font-family: "Good Vibes", cursive;
 }
@@ -89,7 +130,6 @@
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 0.7rem;
-  z-index: 99;
   cursor: pointer;
 }
 
@@ -628,7 +668,7 @@
 }
 
 .menu-center {
-  z-index: 3;
+  z-index: 2;
   padding: 1rem;
 }
 
@@ -773,7 +813,7 @@ img {
 .menu-content-card {
   width: 100%;
   height: 100%;
-  padding: 0 1.5rem;
+  padding: 2rem 1.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -866,6 +906,11 @@ img {
           order: 2;
 }
 
+.con2 {
+  -ms-grid-columns: 0.6fr 0.4fr;
+      grid-template-columns: 0.6fr 0.4fr;
+}
+
 .con3 .menu-img-con {
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
@@ -876,6 +921,13 @@ img {
   font-size: 1.3rem;
   line-height: 1.5rem;
   letter-spacing: 0.2rem;
+}
+
+@media only screen and (max-width: 680px) {
+  .menu-con {
+    -ms-grid-columns: 0.8fr;
+        grid-template-columns: 0.8fr;
+  }
 }
 
 .about-header {
@@ -1009,6 +1061,274 @@ img {
   bottom: 0;
 }
 
+@media only screen and (max-width: 680px) {
+  .about-item,
+  .about-item.item2 {
+    -ms-grid-columns: 0.7fr;
+        grid-template-columns: 0.7fr;
+  }
+  .about-item.item2 .about-img-box2 {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  .about-item-content p {
+    padding: 1rem 0rem;
+  }
+}
+
+.contact-form-wrapper {
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(0, 0, 0, 0.95);
+  position: fixed;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  left: 0;
+  top: 0;
+  z-index: 110;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-transform: translateX(200%);
+          transform: translateX(200%);
+}
+
+.close-reservation {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 150;
+  cursor: pointer;
+}
+
+.close-reservation li {
+  padding: 1rem;
+}
+
+.close-reservation li i {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.contact-form {
+  border: 2px solid gold;
+  padding: 1rem 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+}
+
+.form-header {
+  padding: 1rem 0;
+}
+
+.form-header h6 {
+  margin-bottom: 0.5rem;
+  font-family: "Great Vibes", cursive;
+  text-align: center;
+  font-size: 1.5rem;
+  color: gold;
+}
+
+.form-header h1 {
+  font-size: 2rem;
+}
+
+.contact-line {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0.5rem 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1rem;
+}
+
+.contact-line:last-child {
+  margin-right: 0;
+}
+
+.input-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0.3rem 0;
+}
+
+.input-box label {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  margin-bottom: 0.3rem;
+}
+
+.input-box input[type="text"],
+.input-box input[type="number"],
+.input-box input[type="date"] {
+  border: none;
+  margin-right: 0.5rem;
+  background-color: transparent;
+  color: #fff;
+  border-bottom: 1px solid #ddd;
+  padding: 0.2rem 0.4rem;
+}
+
+.input-box select {
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  border-bottom: 1px solid #ddd;
+  padding: 0.2rem 0.4rem;
+}
+
+.input-box select option {
+  color: #000;
+}
+
+::-webkit-calendar-picker-indicator {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+.contact-line.line3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.contact-line.line3 label {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  margin-bottom: 0.3rem;
+  margin-bottom: 1rem;
+}
+
+.contact-line.line3 textarea {
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  border-bottom: 1px solid #ddd;
+  padding: 0.2rem 0.4rem;
+}
+
+.contact-btn {
+  background-color: gold;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 0.7rem;
+  letter-spacing: 0.1rem;
+  font-weight: 900;
+  border-radius: 0.2rem;
+  margin: 0.5rem 0 0.8rem 0;
+  text-shadow: 1px 1px #111;
+}
+
+.form-active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-animation: animateReservation 0.6s linear forwards;
+          animation: animateReservation 0.6s linear forwards;
+}
+
+@-webkit-keyframes animateReservation {
+  0% {
+    opacity: 0;
+    width: 0;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    width: 100%;
+  }
+}
+
+@keyframes animateReservation {
+  0% {
+    opacity: 0;
+    width: 0;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    width: 100%;
+  }
+}
+
+.close-animation {
+  -webkit-animation: animationClose 0.5s;
+          animation: animationClose 0.5s;
+}
+
+@-webkit-keyframes animationClose {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+    width: 100%;
+  }
+  100% {
+    opacity: 0;
+    width: 0;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+}
+
+@keyframes animationClose {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+    width: 100%;
+  }
+  100% {
+    opacity: 0;
+    width: 0;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -1047,7 +1367,7 @@ body {
 }
 
 .menu-abs {
-  position: absolute;
+  position: fixed;
   right: 0;
   top: 0;
   height: 100vh;
@@ -1055,13 +1375,13 @@ body {
   background-color: #000;
   color: #fff;
   padding: 1.5rem;
-  -webkit-transition: all 0.5s linear;
-  transition: all 0.5s linear;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
   visibility: hidden;
   opacity: 0;
-  -webkit-transform: translateX(30rem);
-          transform: translateX(30rem);
-  z-index: 88;
+  -webkit-transform: translateX(40rem);
+          transform: translateX(40rem);
+  z-index: 2;
 }
 
 .menu-abs.active {

@@ -1,5 +1,3 @@
-.wrapper-menus {
-}
 .menu-header {
   height: 65vh;
   background-image: url(menuHeader.jpg);
@@ -26,7 +24,7 @@
   align-items: center;
 }
 .menu-center {
-  z-index: 3;
+  z-index: 2;
   padding: 1rem;
   h6 {
     font-size: 3rem;
@@ -122,7 +120,7 @@ img {
 .menu-content-card {
   width: 100%;
   height: 100%;
-  padding: 0 1.5rem;
+  padding: 2rem 1.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -180,6 +178,9 @@ img {
     order: 2;
   }
 }
+.con2 {
+  grid-template-columns: 0.6fr 0.4fr;
+}
 .con3 {
   .menu-img-con {
     order: 2;
@@ -190,5 +191,11 @@ img {
     font-size: 1.3rem;
     line-height: 1.5rem;
     letter-spacing: 0.2rem;
+  }
+}
+
+@media only screen and(max-width: 680px) {
+  .menu-con {
+    grid-template-columns: 0.8fr;
   }
 }
