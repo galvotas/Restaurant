@@ -947,7 +947,7 @@ img {
   height: 100%;
   left: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .about-section {
@@ -1055,7 +1055,7 @@ img {
 
 .about-bckr::after {
   content: "";
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.3);
   position: absolute;
   width: 100%;
   height: 100%;
