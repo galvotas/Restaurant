@@ -1,5 +1,5 @@
 .about-header {
-  background-image: url(abou-images/about-heading.jpg);
+  background-image: url(media/about-heading.jpg);
   position: relative;
   &:after {
     content: "";
@@ -37,7 +37,7 @@
   width: 100%;
   height: 100%;
   background-size: cover;
-  background-image: url(abou-images/sub1.jpg);
+  background-image: url(media/sub1.jpg);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -45,7 +45,7 @@
   width: 100%;
   height: 100%;
   background-size: cover;
-  background-image: url(abou-images/sub2.jpg);
+  background-image: url(media/sub2.jpg);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -71,7 +71,7 @@
 .about-bckr {
   width: 100%;
   height: 35vh;
-  background-image: url(abou-images/about-plate.jpg);
+  background-image: url(media/about-plate.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
